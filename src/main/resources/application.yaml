@@ -1,0 +1,28 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: spdlqj21tp@gmail.com
+    password: ruddnr6340!
+    properties:
+      mail:
+        smtp:
+          auth: true
+          staartls:
+            enable: true
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 30MB
+      location: C:/Users/Lee Kyoung Wook/Desktop/java/springIMG
+mybatis:
+  mapper-locations: mybatis-mapper/**/*.xml
+  type-aliases-package: com.koreait.facebook
+
+#톰캣 포트 변경
+server:
+  port: 8090
