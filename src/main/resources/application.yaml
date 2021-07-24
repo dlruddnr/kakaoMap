@@ -10,6 +10,11 @@ spring:
           auth: true
           staartls:
             enable: true
+  datasource:
+    url: jdbc:mysql://localhost:3308/mypart
+    username: root
+    password: koreait
+    driver-class-name: org.mariadb.jdbc.Driver
   mvc:
     view:
       prefix: /WEB-INF/
@@ -20,8 +25,8 @@ spring:
       max-request-size: 30MB
       location: C:/Users/Lee Kyoung Wook/Desktop/java/springIMG
 mybatis:
-  mapper-locations: mybatis-mapper/**/*.xml
-  type-aliases-package: com.koreait.facebook
+  mapper-locations: mybatis-mapper/*.xml
+  type-aliases-package: com.koreait.socket
 
 #톰캣 포트 변경
 server:
